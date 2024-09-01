@@ -1,5 +1,5 @@
 """ this section defines the pdf checks and storing chunks
-        to it and APi endpoints are defined"""
+        to it and then creating an audio file"""
 
 from pypdf import PdfReader
 from pathlib import Path
