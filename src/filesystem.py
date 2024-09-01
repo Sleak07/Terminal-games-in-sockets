@@ -40,3 +40,10 @@ class Filesystem:
             raise RuntimeError(f"An unexpected error occured {e}")
 
         return content
+
+
+if __name__ == "__main__":
+    filesystem = Filesystem("/path/to/file.pdf")
+    filesystem.check_file_or_directory()
+    filesystem.check_file_not_found()
+    filesystem.read_file()
