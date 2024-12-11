@@ -26,9 +26,9 @@ func recieveHandler(connection *websocket.Conn) {
 		log.Printf("Recieved: %s\n", msg)
 	}
 }
+
 func main() {
 	done = make(chan interface{})    // channel to indicate reciever handle is done
 	interrupt = make(chan os.Signal) // channel to listen for interrupt signal
 	signal.Notify(interrupt, os.Interrupt)
-
 }
