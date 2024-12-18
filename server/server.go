@@ -18,7 +18,7 @@ func socketHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer conn.Close()
 
-	//event loop
+	// event loop
 	for {
 		messagetype, message, err := conn.ReadMessage()
 		if err != nil {
